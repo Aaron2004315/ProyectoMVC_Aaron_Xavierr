@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mueble Al dia</title>
+</head>
+
+<body>
+  <p id="salida"></p>
+  <p id="PorcentajeComedores"></p>
+  <p id="MontoTotalVendido"></p>
+
+  <section id="formMuebleria">
+    <!-- Cambiar título -->
+    <h3>MUEBLE AL DÍA</h3>
+    <table id="formMuebleriaTabla">
+      <tr>
+        <!-- Agregar encabezados de columnas -->
+        <th>Factura</th>
+        <th>Madera</th>
+        <th>Sillas</th>
+        <th>Tela</th>
+      </tr>
+    </table>
+
+    <h5>PorcentajeComedores: <span id="formMuebleriaLblPorcComedor">?</span></h5>
+    <h5>MontoTotalVendido: <span id="formMuebleriaLblMontoTotalVendido">?</span></h5>
+    <h5>Producto que genera mas Ganancias: <span id="formLblProductoMasVendido">?</span></h5>
+    <!-- Ajustar inner del botón -->
+    <button id="btAgregarMueble">Agregar Mueble</button>
+    <button id="BtAgregarComedor">Agregar Comedor</button>
+  </section>
+
+  <section id="FormComedor">
+    <h3>Datos de Comedor</h3>
+
+    <input type="text" id="FormComedorinFactura" placeholder="Factura"></input>
+    <input type="text" id="FormComedorinMadera" placeholder="Madera"></input>
+    <input type="text" id="FormComedorinSillas" placeholder="Sillas"></input>
+    <button id="btAceptarComedor">Aceptar Comedor</button>
+  </section>
+  <section id="FormMueble">
+    <h3>Datos de Mueble</h3>
+
+    <input type="text" id="FormMuebleinFactura" placeholder="Factura Mueble"></input>
+    <input type="text" id="FormMuebleinMadera" placeholder="Madera"></input>
+    <input type="text" id="FormMuebleinTela" placeholder="Tela"></input>
+    <button id="btAceptarMueble">Aceptar Mueble</button>
+  </section>
+  <script type="module">
+    import Cl_Main from "./Cl_main.js"
+    new Cl_Main()
+  </script>
+</body>
+
+</html>
